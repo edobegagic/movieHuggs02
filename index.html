@@ -24,10 +24,14 @@
       </div>
       <ul class="nav-link-container">
         <li class="nav-link">
-          <a href="#homeSection" class="hvr-icon-pulse">Home </a>
+          <a href="#homeSection" class="hvr-buzz-out">Home </a>
         </li>
-        <li class="nav-link"><a href="#aboutSection">About</a></li>
-        <li class="nav-link"><a href="#contactSection">Contact</a></li>
+        <li class="nav-link">
+          <a href="#aboutSection" class="hvr-buzz-out">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contactSection" class="hvr-buzz-out">Contact</a>
+        </li>
       </ul>
     </nav>
     <div class="page-content" id="homeSection">
@@ -108,7 +112,39 @@
             laudantium.
           </p>
         </div>
-        <div class="contact-footer"></div>
+        <div class="contact-footer">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="600"
+                height="500"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=rijeka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: right;
+                height: 500px;
+                width: 600px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 400px;
+                width: 600px;
+              }
+            </style>
+          </div>
+        </div>
       </section>
     </div>
 
