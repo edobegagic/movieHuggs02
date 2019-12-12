@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.about {
+  padding-top: 15vh;
+}
+.contact {
+  padding-top: 15vh;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row-reverse;
+  height: 10vh;
+  width: 100%;
+  background: rgb(27, 20, 20);
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1em;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 1em;
+}
+
+.nav-link a {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh;
+}
+
+/*staviti da se nalazi slider koji izlistava array filmova kad je by name. carousel onaj nabrijani*/
+.display-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  z-index: 1;
+  position: fixed;
+}
+
+.movie-poster {
+  height: auto;
+  width: 16vw;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: rgb(141, 134, 134);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-by-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mood-container {
+  border: 1px solid black;
+  height: 30vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mood {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background: rgb(133, 176, 255);
+}
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  background: rgb(133, 255, 164);
+}
+
+.advanced-search {
+  height: 100vh;
+  width: 100%;
+  background: rgb(248, 206, 68);
+}
+
+.main-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.5em;
+}
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+}
+
+.text {
+  font-family: 'Nunito', sans-serif;
+}
+
+.link {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 20%;
+    z-index: 2;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px;
+    background: white;
+  }
+  .nav-link-container {
+    display: none;
+  }
+}

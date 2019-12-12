@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>movieHuggs</title>
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-link-container">
+        <li class="nav-link"><a href="#homeSection">Home</a></li>
+        <li class="nav-link"><a href="#aboutSection">About</a></li>
+        <li class="nav-link"><a href="#contactSection">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="page-content" id="homeSection">
+      <section class="home">
+        <div class="home-header">
+          <h1 class="main-title">movieHuggs</h1>
+        </div>
+        <div id="homeMain" class="home-main">
+          <div class="search-by-name">
+            <p class="text">search by name</p>
+            <div class="input-container">
+              <input id="userInput" />
+              <button id="searchButton">Search</button>
+            </div>
+          </div>
+          <div class="question-container">
+            <h3 class="text">or tell us what you are in the mood for</h3>
+            <div class="mood-container">
+              <div class="text mood">
+                <p id="somethingFunny">something funny</p>
+              </div>
+              <div class="text mood">
+                <p id="rollercoaster">up for a rollercoaster!</p>
+              </div>
+              <div class="text mood">
+                <p id="mistery">mistery</p>
+              </div>
+              <div class="text mood">
+                <p id="visualCandy">visual candy</p>
+              </div>
+              <div class="text mood">
+                <p id="hungryForArt">hungry for art</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="displayContainer" class="display-container hidden">
+          <p id="ispis">
+            <img
+              id="moviePoster"
+              class="movie-poster"
+              src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
+              alt="Movie Poster Id"
+            />
+          </p>
+          <button id="closeButton">Close</button>
+        </div>
+
+        <div class="home-footer">
+          <a class="link" href="#">find out more about mood</a>
+        </div>
+      </section>
+      <section class="about" id="aboutSection">
+        <div class="about-header">
+          <h1 class="title">about</h1>
+        </div>
+        <div class="about-main">
+          <p class="text"></p>
+        </div>
+        <div class="about-footer"></div>
+      </section>
+      <section class="contact" id="contactSection">
+        <div class="contact-header">
+          <h1 class="title">contact</h1>
+        </div>
+        <div class="contact-main">
+          <p class="text"></p>
+        </div>
+        <div class="contact-footer"></div>
+      </section>
+    </div>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/removeHide.js"></script>
+    <script src="js/addHide.js"></script>
+  </body>
+</html>
