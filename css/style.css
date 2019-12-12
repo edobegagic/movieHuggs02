@@ -10,6 +10,11 @@ html {
 body {
   margin: 0px;
   padding: 0px;
+  background-image: linear-gradient(
+    rgb(141, 134, 134),
+    rgb(133, 176, 255),
+    rgb(248, 206, 68)
+  );
 }
 
 .about {
@@ -26,7 +31,7 @@ nav {
   flex-direction: row-reverse;
   height: 10vh;
   width: 100%;
-  background: rgb(27, 20, 20);
+  background: black;
 }
 
 nav > ul {
@@ -47,6 +52,9 @@ nav > ul {
   text-decoration: none;
 }
 
+.nav-link-icon {
+}
+
 .page-content {
   display: flex;
   flex-direction: column;
@@ -57,7 +65,8 @@ nav > ul {
 .display-container {
   display: flex;
   flex-direction: column;
-  height: 500px;
+
+  background: rgba(1, 1, 1, 0.5);
   z-index: 1;
   position: fixed;
 }
@@ -70,7 +79,6 @@ nav > ul {
 .home {
   height: 100vh;
   width: 100%;
-  background: rgb(141, 134, 134);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,19 +113,11 @@ nav > ul {
 .about {
   height: 100vh;
   width: 100%;
-  background: rgb(133, 176, 255);
 }
 
 .contact {
   height: 100vh;
   width: 100%;
-  background: rgb(133, 255, 164);
-}
-
-.advanced-search {
-  height: 100vh;
-  width: 100%;
-  background: rgb(248, 206, 68);
 }
 
 .main-title {
