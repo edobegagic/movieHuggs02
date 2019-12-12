@@ -47,19 +47,21 @@
             <h3 class="text">or tell us what you are in the mood for</h3>
             <div class="mood-container">
               <div class="text mood hvr-float-shadow">
-                <p id="somethingFunny">something funny</p>
+                <p data-aos="fade-up" id="somethingFunny">something funny</p>
               </div>
               <div class="text mood hvr-float-shadow">
-                <p id="rollercoaster">up for a rollercoaster!</p>
+                <p data-aos="fade-up" id="rollercoaster">
+                  up for a rollercoaster!
+                </p>
               </div>
               <div class="text mood hvr-float-shadow">
-                <p id="mistery">mistery</p>
+                <p data-aos="fade-up" id="mistery">mistery</p>
               </div>
               <div class="text mood hvr-float-shadow">
-                <p id="visualCandy">visual candy</p>
+                <p data-aos="fade-up" id="visualCandy">visual candy</p>
               </div>
               <div class="text mood hvr-float-shadow">
-                <p id="hungryForArt">hungry for art</p>
+                <p data-aos="fade-up" id="hungryForArt">hungry for art</p>
               </div>
             </div>
           </div>
@@ -69,7 +71,7 @@
             <img
               id="moviePoster"
               class="movie-poster"
-              src="https://i.pinimg.com/originals/55/b3/24/55b324daa1deaa74959db8af88603630.jpg"
+              src="assets/svg/Spin-1s-70px.svg"
               alt="Movie Poster Id"
             />
           </p>
@@ -77,15 +79,17 @@
         </div>
 
         <div class="home-footer">
-          <a class="link" href="#">find out more about mood</a>
+          <a data-aos="fade-up" class="link" href="#"
+            >find out more about mood</a
+          >
         </div>
       </section>
       <section class="about" id="aboutSection">
         <div class="about-header">
-          <h1 class="title">about</h1>
+          <h1 data-aos="fade-right" class="title">about</h1>
         </div>
         <div class="about-main">
-          <p class="text">
+          <p data-aos="fade-left" class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla amet
             officiis nesciunt accusantium quaerat repellat vitae quidem
             recusandae soluta cupiditate aspernatur dolorem tenetur, incidunt
@@ -96,10 +100,10 @@
       </section>
       <section class="contact" id="contactSection">
         <div class="contact-header">
-          <h1 class="title">contact</h1>
+          <h1 data-aos="fade-right" class="title">contact</h1>
         </div>
         <div class="contact-main">
-          <p class="text">
+          <p data-aos="fade-left" class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
             laudantium.
           </p>
@@ -115,5 +119,8 @@
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
